@@ -3,62 +3,152 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
- <head>
-    <base target="_top">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/newcss.css">
-  </head>
-  <body>
- 
-    <h1> Datorgrafika. GIMP. 
-            <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-            <ul>
-              <li> Datorgrafika (computer graphics) ir informācijas apstrādes režīms, kas ar atbilstošu ievades
-un apstrādes programmu un ierīču palīdzību ļauj informāciju attēlot grafiskā veidā. <li/>
-<li>GIMP ir daudzplatformu foto manipulēšanas rīks. GIMP ir GNU Image Manipulation Program akronīms. 
-GIMP ir piemērots dažādu foto manipulācijas uzdevumu veikšanai, tai skaitā fotogrāfiju pielabošanai, 
-attēla komponēšanai un atjaunošanai. <li/>
+<!DOCTYPE html> 
+<html lang="lv">
+<head>
 
-<li>Viena no GIMP stiprajām pusēm ir tā brīvā pieejamība un savietojamība ar daudzām operētājsistēmām.
-    Lielākajā daļā GNU/Linux izplatījumu GIMP ir iekļauts kā standarta aplikācija. Tāpat GIMP ir pieejams arī citām operētājsistēmām, piemēram, Microsoft Windows™ un Apple macOS™ (Darwin). GIMP ir bezmaksas lietojumprogramma, kas tiek izplatīta saskaņā ar General Public License (GPL).
-    <ul/>
-    GPL nodrošina lietotājiem brīvu piekļuvi pirmkodam un iespēju to modificēt. <li/>
-            <p> <h1> Vektorgrafika. Inkscape
-              <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-              <ul>
-                <li>Inkscape ļauj veidot un rediģēt vektorgrafiku, piemēram, zīmēt logotipus, ikonas, plakātus vai ilustrācijas. Programmā ir pieejami dažādi rīki: zīmēšanas rīki (brīvas rokas līnijas, līknes, formas), teksta rīki, krāsu un gradientu rīki, kā arī objektu pārvietošanas un mērogošanas rīki. Tur ir arī iespējas slāņu pārvaldībai, kontūru un stilu rediģēšanai, kā arī darbus eksportēt dažādos formātos, piemēram, SVG vai PDF.<li/>
-                <ul/>
-             <h1> 3D Kuba izdruka 
-              <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-              <ul>
-                <li> Šeit mēs izmanotjām lietotni Tinkercad. 3D Kuba modeli bija viegli izveidot mainot tā izmēru,krāsu un pozīciju. Programmā var eksperimentēt ar dažādiem modeļiem un sagatavot tos 3D drukai vai vizualizācijai. <li/>
-                <ul/>
-              <h1> MS Word <h1/>   
-              <p> Ms wordā mēs apguvam tādas prasmes kā:
-                <ul>
-                  <li> Teksta ievietošana un formatēšana – burtu lielums, fonts, slīpraksts, pasvītrojums
-<li>Paragrāfu un līniju noformējums – rindkopu atstarpes, izlīdzināšana, tabulēšana
-<li>Saraksti – punktu vai numurētu sarakstu veidošana
-<li>Tabulas un attēli – ievietošana un formatēšana dokumentā
-<li>Dokumenta saglabāšana un drukāšana – pareizs formāts un saglabāšanas veidi
-<li>Vienkārša noformēšana – galvenes, kājenes, lappušu numerācija
-  <ul/>
-              <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-                    <h1> Video reklāmas veidošana <h1/>  
-                    <! šeit ievietot pašu video un vrb dažas lietas par capcut> 
-                    <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-    <h1> Excel<h1/>
-    <p> Excelī mēs apguvam tādas prasmes kā:
-      <ul>
-        <li>Ievadīt un rediģēt datus šūnās
-<li>Formatēt šūnas – fonti, krāsas, robežas, tekstu izlīdzināšana
-<li>Veidot vienkāršas tabulas un sarakstus
-<li>Izmantot formulas un funkcijas, piemēram, SUM, AVERAGE, MIN, MAX
-<li>Veidot grafikus un diagrammas, lai vizualizētu datus
-<li>Filtrēt un kārtot datus pēc dažādiem kritērijiem
-<li>Saglabāt, atvērt un drukāt darblapas
-  <ul/>
-    <p> <img src='images/unknown.png' style='width:50px;hight:60 px' alt='gimp'>
-    <p> <a href="otrais.html">XXX<a/>
-  </body>
+<meta charset="UTF-8">
+<title>Projekts</title>
+
+<link rel="stylesheet" href="mansStils.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+
+body, p, li, a, h1, h2, h3{
+font-family:"Times New Roman", Times, serif !important;
+}
+
+
+.nav-panel a,
+.nav-panel button{
+color:darkmagenta !important;
+}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-bar nav-panel">
+
+<a href="#sakums" class="w3-bar-item w3-button">Sākums</a>
+
+<div class="w3-dropdown-hover">
+<button class="w3-button">Attēlu apstrāde ▾</button>
+
+<div class="w3-dropdown-content w3-bar-block dropdown-menu">
+<a href="#rastrgrafika" class="w3-bar-item w3-button">Rastrgrafika</a>
+<a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika</a>
+</div>
+
+</div>
+
+<a href="#teksts" class="w3-bar-item w3-button">Teksta apstrāde</a>
+<a href="#excel" class="w3-bar-item w3-button">Izklājlapas</a>
+<a href="#video" class="w3-bar-item w3-button">Video</a>
+
+<a href="otrais.html" class="w3-bar-item w3-button">Individuālā tēma</a>
+
+</div>
+
+
+<h1 id="sakums">Rastrgrafika. GIMP.</h1>
+
+<ul>
+ 
+<li id="rastrgrafika">
+Rastrgrafika (computer graphics) ir grafiskās informācijas attēlošanas veids,
+kur attēls tiek veidots no maziem pikseļiem, un katrs pikselis satur informāciju par krāsu un spilgtumu. 
+Tā tiek izmantota, lai digitāli attēlotu attēlus, fotogrāfijas un vizuālus elementus datorā.
+</li>
+
+<li>
+GIMP ir daudzplatformu foto manipulēšanas rīks. GIMP ir GNU Image Manipulation Program akronīms. 
+GIMP ir piemērots dažādu foto manipulācijas uzdevumu veikšanai, tai skaitā fotogrāfiju pielabošanai, 
+attēla komponēšanai un atjaunošanai.
+</li>
+
+<li>
+Viena no GIMP stiprajām pusēm ir tā brīvā pieejamība un savietojamība ar daudzām operētājsistēmām.
+Lielākajā daļā GNU/Linux izplatījumu GIMP ir iekļauts kā standarta aplikācija.
+</li>
+
+</ul>
+
+<div>
+<img src="images/gif2.gif" alt="Animācija" style="width:270px;height:auto;">
+<img src="images/gimp.png" alt="gimp" style="width:150px;height:auto;">
+</div>
+
+<h1 id="vektorgrafika">Vektorgrafika. Inkscape</h1>
+
+<ul>
+<li>
+Inkscape ļauj veidot un rediģēt vektorgrafiku.
+</li>
+</ul>
+
+<img src="images/KŪKlogo.svg" alt="logo" style="width:300px;height:auto;">
+
+<h1>3D Kuba izdruka</h1>
+
+<p><img src="images/unknown.png" style="width:50px;height:60px" alt="gimp"></p>
+
+<ul>
+<li>
+Šeit mēs izmantojām lietotni Tinkercad.
+</li>
+</ul>
+
+<h1 id="teksts"> Tekstapstrāde. MS Word</h1>
+
+<p>Ms wordā mēs apguvām tādas prasmes kā:</p>
+
+<ul>
+<li>Teksta ievietošana un formatēšana</li>
+<li>Paragrāfu un līniju noformējums</li>
+<li>Saraksti</li>
+<li>Tabulas un attēli</li>
+<li>Dokumenta saglabāšana</li>
+</ul>
+
+<h1 id="video">Video reklāmas veidošana</h1>
+
+<video width="480" height="270" controls>
+<source src="images/video.mp4" type="video/mp4">
+Jūsu pārlūkprogramma neatbalsta video atskaņošanu.
+</video>
+
+<h1 id="excel">Excel</h1>
+
+<p>Excelī mēs apguvām tādas prasmes kā:</p>
+
+<ul>
+<li>Ievadīt un rediģēt datus šūnās</li>
+<li>Formatēt šūnas</li>
+<li>Veidot tabulas</li>
+<li>Izmantot formulas</li>
+<li>Veidot grafikus</li>
+</ul>
+
+<p>Excel izklājlapas piemērs: <strong>MsExcel2111</strong></p>
+
+<p>
+Lejupielādē aprēķinus šeit: 
+<a href="images/aprēķini.xlsx" download="MsExcel2111.xlsx">
+aprēķini.xlsx
+</a>
+</p>
+
+<p><a href="otrais.html">otrais,html</a></p>
+<p><a href="forma.html">forma.html</a></p>
+<p><a href="dzer.html">dzer.html</a></p>
+<p><a href="dzerdaudz.html">dzerdaudz.html</a></p>
+</body>
 </html>
