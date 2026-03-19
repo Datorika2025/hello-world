@@ -60,9 +60,3 @@ li{
     font-size:20px;
     font-weight:bold;
 }
-.img-right {
-    float: right;
-    margin-left: 15px;
-    width: 200px; 
-    border-radius: 10px;
-}
