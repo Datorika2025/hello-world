@@ -11,25 +11,26 @@ body{
     font-family:"Times New Roman", Times, serif;
     margin:0;
     padding:40px;
-}
-body {
-  display: grid;
-  place-items: center; 
-  height: 100vh;
-  margin: 0;
-}
-h1, h2, h3{
-    text-align:center;
+    min-height:100vh;
 }
 
+/* virsraksti centrēti, bet lapa pilna platumā */
+h1, h2, h3{
+    text-align:center;
+    width:100%;
+}
+
+/* galvenais virsraksts */
 h1{
     color:#ffffff;
     font-size:40px;
     background-color:#ff9bb3;
     padding:15px;
     border-radius:10px;
+    display:inline-block;
 }
 
+/* apakšvirsraksti */
 h2{
     color:#ffffff;
     font-size:30px;
@@ -41,17 +42,19 @@ h3{
     font-size:22px;
 }
 
-
+/* teksts */
 p{
     color:#7a4b6a;
     font-size:18px;
-    max-width:600px;
+    max-width:700px;
     line-height:1.6;
+    margin: 10px auto;
 }
 
-
+/* saraksti */
 ul{
-    max-width:600px;
+    max-width:700px;
+    margin: 10px auto;
 }
 
 li{
@@ -59,10 +62,11 @@ li{
     font-size:18px;
     margin-bottom:8px;
 }
+
+/* navigācija */
 .nav-panel a,
 .nav-panel button{
-font-size:20px;
-font-weight:bold;
-}   
-
+    font-size:20px;
+    font-weight:bold;
+}
 
