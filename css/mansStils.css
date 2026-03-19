@@ -13,12 +13,7 @@ body{
     padding:40px;
 }
 
-body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    margin: 0;
-}
+
 
 h1, h2, h3{
     text-align:center;
