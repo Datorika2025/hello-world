@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Mērvienības</title>
+
+    <style>
+        body {
+            background-image: url("Images/cipari.jpg");
+        }
+
+        .forma {
+            background-color: rgb(220,220,0);
+            padding: 20px;
+            width: 400px;
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Informācijas daudzuma mērvienības</h1>
+
+<div class="forma">
+
+    <input type="text" id="gb"> GB=
+    <br><br>
+
+    <button onclick="uzMB()">Izteikt megabaitos</button>
+    <input type="text" id="mb"> MB
+    <br><br>
+
+    <button onclick="uzMiB()">Izteikt mibibaitos</button>
+    <input type="text" id="mib"> MiB
+
+</div>
+
+<script>
+function uzMB() {
+    let gb = document.getElementById("gb").value;
+    let mb = gb * 1000;
+    document.getElementById("mb").value = mb;
+}
+
+function uzMiB() {
+    let gb = document.getElementById("gb").value;
+    let mib = gb * 1024;
+    document.getElementById("mib").value = mib;
+}
+</script>
+
+</body>
+</html>

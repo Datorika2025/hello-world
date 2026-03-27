@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzimšanas diena</title>
+</head>
+<body>
+
+<h1>Gaidot dzimšanas dienu..</h1>
+<hr>
+
+<p>Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
+
+Gads: <input type="text" id="gads"><br><br>
+Mēnesis: <input type="text" id="menesis"><br><br>
+Diena: <input type="text" id="datums"><br><br>
+
+<button onclick="dienas()">Aprēķināt dienu skaitu līdz dzimšanas dienai</button>
+
+<p>Līdz svētkiem atlikušas:</p>
+<input type="text" id="dienas" readonly>
+dienas :))
+
+<script>
+function dienas() {
+    let gads = document.getElementById("gads").value;
+    let menesis = document.getElementById("menesis").value - 1; // JS months start from 0
+    let datums = document.getElementById("datums").value;
+
+    let sodien = new Date();
+    let dzimsanasDatums = new Date(gads, menesis, datums);
+
+    let starpiba = dzimsanasDatums - sodien;
+
+    let dienas = Math.ceil(starpiba / (1000 * 60 * 60 * 24));
+
+    document.getElementById("dienas").value = dienas;
+}
+</script>
+
+</body>
+</html>
